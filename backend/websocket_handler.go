@@ -445,7 +445,6 @@ func (w *WebSocketManager) attemptReconnect(conn *WebSocketConnection) {
 
 // emitMessage sends a stream message to the frontend
 func (w *WebSocketManager) emitMessage(msg StreamMessage) {
-	// CRITICAL FIX: Check if context is valid before emitting
 	if w.app == nil || w.app.GetCtx() == nil {
 		fmt.Printf("[WS] ⚠️  Cannot emit message - app context not initialized yet\n")
 		return
