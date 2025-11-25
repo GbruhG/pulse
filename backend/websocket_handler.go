@@ -319,7 +319,7 @@ func (w *WebSocketManager) readMessages(conn *WebSocketConnection) {
 				payload = "[Close]"
 			}
 
-			// Emit inbound message - THE FIX IS HERE
+			// Emit inbound message
 			w.emitMessage(StreamMessage{
 				ID:        w.generateMessageID(),
 				Direction: "inbound",
