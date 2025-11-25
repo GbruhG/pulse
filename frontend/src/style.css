@@ -1,0 +1,125 @@
+:root {
+    --bg-primary: #0a0a0a;
+    --bg-secondary: #0f0f0f;
+    --bg-tertiary: #141414;
+    --border-color: rgba(255, 255, 255, 0.1);
+    --text-primary: #e4e4e7;
+    --text-secondary: #9ca3af;
+    --text-tertiary: #71717a;
+    --text-disabled: #52525b;
+    --accent-red: #ef4444;
+    --accent-red-hover: #f87171;
+    --accent-blue: #3b82f6;
+    --accent-green: #10b981;
+    --accent-yellow: #f59e0b;
+    --accent-purple: #8b5cf6;
+    --transition-fast: all 0.2s;
+    --transition-normal: all 0.3s;
+    --radius-sm: 4px;
+    --radius-md: 6px;
+    --radius-lg: 8px;
+    --radius-xl: 12px;
+}
+
+html {
+    background-color: var(--bg-primary);
+    text-align: center;
+    color: white;
+}
+
+body {
+    margin: 0;
+    color: var(--text-primary);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    background: var(--bg-primary);
+    overflow: hidden;
+}
+
+@font-face {
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 400;
+    src: local(""),
+    url("assets/fonts/nunito-v16-latin-regular.woff2") format("woff2");
+}
+
+#app {
+    height: 100vh;
+    text-align: center;
+    background: var(--bg-primary);
+}
+
+/* Global UI Elements */
+button {
+    cursor: pointer;
+    font-family: inherit;
+    transition: var(--transition-fast);
+    border: none;
+    outline: none;
+    font-weight: 500;
+}
+
+input, textarea, select {
+    font-family: inherit;
+    transition: var(--transition-fast);
+    border-radius: var(--radius-sm);
+}
+
+/* Focus styles */
+*:focus {
+    outline: 2px solid var(--accent-blue);
+    outline-offset: 2px;
+}
+
+*:focus-visible {
+    outline: 2px solid var(--accent-blue);
+    outline-offset: 2px;
+}
+
+/* Smooth animations */
+* {
+    box-sizing: border-box;
+}
+
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Typography improvements */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+p {
+    line-height: 1.6;
+    color: var(--text-secondary);
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #27272a;
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #3f3f46;
+}
+
+/* Selection styling */
+::selection {
+    background: rgba(239, 68, 68, 0.3);
+    color: var(--text-primary);
+}
