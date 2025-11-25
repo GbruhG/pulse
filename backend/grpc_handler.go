@@ -463,15 +463,13 @@ func (g *GrpcStreamManager) handleServerStream(conn *GrpcConnection, inputMsg *d
 
 // handleClientStreamSend sends a message during client streaming
 func (g *GrpcStreamManager) handleClientStreamSend(conn *GrpcConnection, inputMsg *dynamic.Message) error {
-	// Implementation for client streaming
-	// This requires maintaining stream state
+	// TODO
 	return fmt.Errorf("client streaming not yet implemented")
 }
 
 // handleBidiStreamSend sends a message during bidirectional streaming
 func (g *GrpcStreamManager) handleBidiStreamSend(conn *GrpcConnection, inputMsg *dynamic.Message) error {
-	// Implementation for bidi streaming
-	// This requires maintaining stream state
+	// TODO
 	return fmt.Errorf("bidirectional streaming not yet implemented")
 }
 
@@ -522,4 +520,3 @@ func getMethodType(method *desc.MethodDescriptor) string {
 	return "bidi"
 }
 
-// Wails method bindings (add these to your App struct)
