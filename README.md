@@ -15,7 +15,7 @@ Breaking changes, UI shifts, and feature overhauls will happen frequently.
 
 ---
 
-## ✨ Key Concepts
+## Key Concepts
 
 ### Unified Workspaces
 - Multiple custom **workspaces**
@@ -48,7 +48,7 @@ Breaking changes, UI shifts, and feature overhauls will happen frequently.
 
 ---
 
-## 🌐 Protocol Support (Alpha)
+## Protocol Support (Alpha)
 
 Pulse already supports a wide set of protocols, with more being built.
 
@@ -186,7 +186,7 @@ Full Kafka integration, designed for real developer debugging.
 
 ---
 
-## 🧩 Future Roadmap
+## Future Roadmap
 
 ### Coming Soon
 - MQTT (WS + backend TCP)
@@ -210,7 +210,7 @@ Full Kafka integration, designed for real developer debugging.
 
 ---
 
-## 🛠️ Technology Stack
+## Technology Stack
 
 ### Frontend
 - **Svelte + TypeScript**
@@ -229,17 +229,7 @@ Full Kafka integration, designed for real developer debugging.
 
 ---
 
-## 🚧 Alpha Disclaimer
+## Alpha Disclaimer
 
 Pulse is **not production-ready yet**.  
 Features may break, APIs may change, and a lot of UI polish is still in progress.
-
-Feedback, issues, and feature requests are welcome.
-
----
-
-## 🧭 Project Status
-
-`Alpha – Actively Developing`
-
-New features and big changes arrive weekly. Stay tuned.
